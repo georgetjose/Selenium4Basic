@@ -3,4 +3,13 @@
   <groupId>TL-TA-New1</groupId>
   <artifactId>TL-TA-Project</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+  <dependencies>
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.7.2</version>
+</dependency>
+</dependencies>
+  
 </project>
