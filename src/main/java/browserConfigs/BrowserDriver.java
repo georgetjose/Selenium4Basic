@@ -6,9 +6,4 @@ public interface BrowserDriver
 {
     WebDriver launchBrowser();
 
-    void launchUrl(String url);
-
-    void maximize();
-
-    void closeBrowser();
 }

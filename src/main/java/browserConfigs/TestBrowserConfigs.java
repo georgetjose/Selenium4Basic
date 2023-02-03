@@ -10,12 +10,13 @@ public class TestBrowserConfigs
     public void testingBrowser(BrowserTypes browser) throws InterruptedException
     {
         BrowserDriver browserDriver = BrowserFlow.testBrowser(browser);
+        BrowserActions browserActions = new WindowsBrowsers();
         if (browserDriver != null) {
             browserDriver.launchBrowser();
-            browserDriver.launchUrl("https://google.co.in");
-            browserDriver.maximize();
+            browserActions.launchUrl("https://google.co.in");
+            browserActions.maximize();
             Thread.sleep(3000);
-            browserDriver.closeBrowser();
+            browserActions.closeBrowser();
         }
     }
 

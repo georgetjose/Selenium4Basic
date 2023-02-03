@@ -3,9 +3,9 @@ package browserConfigs;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ChromeBrowser implements BrowserDriver
+public class ChromeBrowser extends WindowsBrowsers implements BrowserDriver
 {
-    public static ChromeDriver driver;
+    //public static ChromeDriver driver;
 
     @Override
     public WebDriver launchBrowser() {
@@ -13,21 +13,4 @@ public class ChromeBrowser implements BrowserDriver
         return driver;
     }
 
-    @Override
-    public void launchUrl(String url)
-    {
-        driver.get(url);
-    }
-
-    @Override
-    public void maximize()
-    {
-        driver.manage().window().maximize();
-    }
-
-    @Override
-    public void closeBrowser()
-    {
-        driver.close();
-    }
 }
